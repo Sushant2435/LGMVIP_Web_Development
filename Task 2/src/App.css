@@ -1,0 +1,90 @@
+.nopad {
+  padding: 0;
+}
+
+
+/* GET USER BUTTON  */
+.button {
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 4px 50px;
+  cursor: pointer;
+
+  background-color: rgb(4, 26, 148);
+  border: 2px solid black ;
+  border-radius: 10px;
+  text-transform: uppercase;
+  float:right;
+}
+.row{
+  display:inline-grid;
+  grid-template-columns: repeat(3,1fr);
+}
+.card {
+  border-radius:20px;
+  background-image: linear-gradient(rgb(123, 77, 223),rgb(95, 116, 47));
+  margin:50px;
+  padding:30px;
+  text-align: center;
+  transition: transform 0.2s;
+  cursor:pointer;
+  
+}
+
+.card:hover {
+  transform:scale(1.26);
+}
+
+.row img {
+  border-radius: 50%;
+}
+.text{
+  margin-top:20px;
+  margin-left: 20px;
+}
+.text b{
+  font-size: 20px;
+}
+.text p{
+  font-family: 600;
+  font-size: 15px;
+}
+
+@media screen and (max-width:1170px)
+{
+  .row{
+    display:flex;
+    flex-direction: column;
+  }
+  .button{
+    width:115px;
+    font-size:10px;
+    margin-right:5px;
+    margin-top:20px;
+  }
+  .card:hover {
+    transform:scale(1.08);
+  }
+}
+
+@media screen and (max-width:304px)
+{
+  .row{
+    display:flex;
+    flex-direction: column;
+  }
+  .button{
+    width:90px;
+    font-size:8px;
+    margin-top:17px;
+  }
+  .card:hover {
+    transform:scale(1.08);
+  }
+  .text p{
+    font-size:12px;
+  }
+}
